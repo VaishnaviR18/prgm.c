@@ -12,7 +12,7 @@ int main()
 {
     unsigned long int a;
     printf("Enter unsigned 32 bit IP address:");
-    scanf("%d",&a);
+    scanf("%lu",&a);
     unsig32bitTo4_8bit(&a);
     return 0;
 }

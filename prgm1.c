@@ -1,5 +1,5 @@
 #include<stdio.h>
-void unsig32bitTo4_8bit(unsigned int *ip)
+void unsig32bitTo4_8bit(unsigned long int *ip)
 {
      char bytes[4];
      bytes[0]=*ip & 0xFF;

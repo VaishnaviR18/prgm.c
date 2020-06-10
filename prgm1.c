@@ -1,7 +1,7 @@
 #include<stdio.h>
 void unsig32bitTo4_8bit(unsigned long int *ip)
 {
-     char bytes[4];
+     unsigned char bytes[4];
      bytes[0]=*ip & 0xFF;
      bytes[1]=(*ip>>8) & 0xFF;
      bytes[2]=(*ip>>16) & 0xFF;
@@ -10,7 +10,7 @@ void unsig32bitTo4_8bit(unsigned long int *ip)
 }
 int main()
 {
-    int a;
+    unsigned long int a;
     printf("Enter unsigned 32 bit IP address:");
     scanf("%d",&a);
     unsig32bitTo4_8bit(&a);
